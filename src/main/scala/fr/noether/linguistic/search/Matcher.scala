@@ -39,8 +39,6 @@ case class PosTagSequenceMatcher(postagPattern: Seq[PosTag]) extends Matcher {
 
       posTagReaderList = posTagReaderList
         .filter(posTagReader => !posTagReader.validated())
-
-      textReader = textReader.next()
     })
 
     validatedPostagReader
